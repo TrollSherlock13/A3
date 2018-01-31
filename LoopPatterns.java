@@ -53,9 +53,7 @@ public class LoopPatterns {
 	 */
 	public static boolean isPalindrome(String word) {
 		Scanner test = new Scanner (word);
-		int s = 0;
-		int a = 0;
-		int i = word.length() - 1;
+		int s = 0, a = 0, i = word.length() - 1;
 		while (test.hasNext()) {
 			if (word.charAt(s) == word.charAt(i)) {
 				a++;
@@ -77,8 +75,7 @@ public class LoopPatterns {
 	 */
 	public static boolean hasMoreEvenThanOdd(String number) {
 		Scanner evenAndOdd = new Scanner(number);
-		int i = 0;
-		int s = 0;
+		int i = 0, s = 0;
 		while (evenAndOdd.hasNext()) {
 			String number1 = evenAndOdd.next();
 			int value = Integer.parseInt(number1);
